@@ -163,7 +163,7 @@ objects:
 
 The following information is available in the
 [firmware_retraction](Config_Reference.md#firmware_retraction) object:
-- `retract_length`, `retract_speed`, `unretract_extra_length`,
+- `retract_length`, `retract_speed`, 'z_hop_length' `unretract_extra_length`,
   `unretract_speed`: The current settings for the firmware_retraction
   module. These settings may differ from the config file if a
   `SET_RETRACTION` command alters them.
