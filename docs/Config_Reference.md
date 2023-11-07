@@ -1522,6 +1522,8 @@ allowing per-filament settings and runtime tuning.
 #   unretracting.
 #unretract_speed: 10
 #   The speed of unretraction, in mm/s. The default is 10 mm/s.
+#z_hop_length: 0.2
+#   The hight (in mm) the nozzle will  go up (hop) when retracting. The default is 0 mm.
 ```
 
 ### [gcode_arcs]
