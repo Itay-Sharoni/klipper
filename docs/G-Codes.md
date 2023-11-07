@@ -499,7 +499,7 @@ The following additional commands are also available.
 
 #### SET_RETRACTION
 `SET_RETRACTION [RETRACT_LENGTH=<mm>] [RETRACT_SPEED=<mm/s>]
-[UNRETRACT_EXTRA_LENGTH=<mm>] [UNRETRACT_SPEED=<mm/s>]`: Adjust the
+[UNRETRACT_EXTRA_LENGTH=<mm>] [Z_HOP_LENGTH=<mm>] [UNRETRACT_SPEED=<mm/s>]`: Adjust the
 parameters used by firmware retraction. RETRACT_LENGTH determines the
 length of filament to retract and unretract. The speed of retraction
 is adjusted via RETRACT_SPEED, and is typically set relatively
@@ -507,6 +507,7 @@ high. The speed of unretraction is adjusted via UNRETRACT_SPEED, and
 is not particularly critical, although often lower than RETRACT_SPEED.
 In some cases it is useful to add a small amount of additional length
 on unretraction, and this is set via UNRETRACT_EXTRA_LENGTH.
+Z_HOP_LENGTH determines the hight the nozzle will go up when retracting.
 SET_RETRACTION is commonly set as part of slicer per-filament
 configuration, as different filaments require different parameter
 settings.
